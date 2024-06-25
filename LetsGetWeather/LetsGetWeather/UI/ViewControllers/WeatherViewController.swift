@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class WeatherViewController: UITableViewController {
+public class WeatherViewController: UITableViewController {
     
     var cancellables = Set<AnyCancellable>()
     var viewModel: WeatherViewModel? {
@@ -22,7 +22,7 @@ class WeatherViewController: UITableViewController {
         return search
     }()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }

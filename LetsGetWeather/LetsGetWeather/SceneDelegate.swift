@@ -11,7 +11,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-    private lazy var navigationController = UINavigationController(rootViewController: WeatherViewController())
+    private lazy var navigationController = UINavigationController(
+        rootViewController: WeatherComposer.weatherComposedWith(networkLoader: Networking())
+    )
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {        
         guard let windowScene = (scene as? UIWindowScene) else { return }
