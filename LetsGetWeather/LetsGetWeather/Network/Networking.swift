@@ -13,7 +13,7 @@ struct Networking: NetworkDataLoader {
         return URLSession.shared
             .dataTaskPublisher(for: url)
             .map(\.data)
-            .decode(type: WeatherModel.self, decoder: JSONDecoder())
+            .decode(type: WeatherResponse.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
 }

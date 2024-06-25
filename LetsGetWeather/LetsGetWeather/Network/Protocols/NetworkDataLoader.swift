@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 public protocol NetworkDataLoader {
-    typealias Result = AnyPublisher<WeatherModel, Error>
+    typealias Result = AnyPublisher<WeatherResponse, Error>
 
     func loadData(from url: URL) -> Result
 }

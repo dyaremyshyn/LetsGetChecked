@@ -7,9 +7,7 @@
 
 import Foundation
 
-public struct WeatherModel: Decodable {
-    let location: LocationModel?
+struct WeatherModel {
+    let selectedPlace: GooglePlaceModel?
     let current: CurrentModel?
-    let code: Int?
-    let message: String?
 }
