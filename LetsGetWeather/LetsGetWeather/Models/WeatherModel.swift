@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherModel: Decodable {
+public struct WeatherModel: Decodable {
     let location: LocationModel?
     let current: CurrentModel?
     let code: Int?
