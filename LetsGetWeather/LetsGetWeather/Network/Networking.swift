@@ -7,3 +7,13 @@
 
 import Foundation
 
+struct Networking: NetworkDataLoader {
+    
+    func loadData(from url: URL) -> NetworkDataLoader.Result {
+        return URLSession.shared
+            .dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: WeatherModel.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+}

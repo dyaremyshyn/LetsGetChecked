@@ -11,13 +11,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private lazy var navigationController = UINavigationController(rootViewController: WeatherViewController())
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let viewController = ViewController()
-        window?.rootViewController = viewController
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
