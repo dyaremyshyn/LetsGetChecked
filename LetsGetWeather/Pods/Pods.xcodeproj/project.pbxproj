@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C77040D703478EDADEB4E839F298401F /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+				5C53F63B615C49C159CEC84184FD1687 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				A90318251BED9DF57263E157C08FCEF8 /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		28492010468750E9189B71146A6E1DA6 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16C6416F7720EE37A4926509425FF69A /* GooglePlaces.bundle */; };
+		36ED681AF7B3330BB1E7DA04B950DADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4671574860CB8B87D2AD70A18FF28071 /* Pods-LetsGetWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E93CB61B4B62F1D626CA1697746F971 /* Pods-LetsGetWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6B27873EC6912C32125031CB111D32 /* Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 246A1182AA3F976FDF077221F3626B15 /* Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m */; };
+		7FBE2018F3C89BD966D2DEDB8F286055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A51C2713F1ECD86821D59F915E385FBC /* Pods-LetsGetWeatherTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE80F1CE9D0EC31E6FB8D300F1E2987 /* Pods-LetsGetWeatherTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8BCEEC891EBC70A0199FC8BE57567BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BDA006BBCBC4110DE18C158195AD1185 /* Pods-LetsGetWeatherTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 952ECA21FE626D38A69889C747EFA25F /* Pods-LetsGetWeatherTests-dummy.m */; };
+		D599094BCF22CE8544F406510CF00F8F /* Pods-LetsGetWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF84723E131F2E2042E4D22287002EAD /* Pods-LetsGetWeather-dummy.m */; };
+		FC71665F4D7094740920DA143CF93054 /* Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5535C190D2D4505E481C03891097541A /* Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		242C9C7DEF1B31F09597AED59E64994A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 285AAD0A8192022DACE2DAFE30D6CD52;
+			remoteInfo = "GooglePlaces-GooglePlacesResources";
+		};
+		2C95EB7E193D2EB321947875F1B656E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		6FE3FBA67882F1671FD0FCBB685FAF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B928585AAB2B54FDBE58B36EEEA14BB8;
+			remoteInfo = "Pods-LetsGetWeather";
+		};
+		7919C60A634E4C869EADD529C0FF7119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002BE201E0F22BBFD2946C516ADA415E /* Pods-LetsGetWeather-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeather-Info.plist"; sourceTree = "<group>"; };
+		060B9ADC98E962EF434745B4C12D039F /* Pods-LetsGetWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetsGetWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16C6416F7720EE37A4926509425FF69A /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Resources/GooglePlacesResources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		1996A570190D0CC22F32FE63E101D394 /* Pods-LetsGetWeather-LetsGetWeatherUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-Info.plist"; sourceTree = "<group>"; };
+		1F7441AC73C17EB43F5BE6A556D88A40 /* GooglePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.debug.xcconfig; sourceTree = "<group>"; };
+		246A1182AA3F976FDF077221F3626B15 /* Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m"; sourceTree = "<group>"; };
+		2B227FBB989F99627D848A5CD61DB00F /* Pods-LetsGetWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeather.release.xcconfig"; sourceTree = "<group>"; };
+		3B2F1F8142144DCC94029FF82B2FD1BB /* Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4152E1BCF67E92CC9A682C45810F44F1 /* GooglePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.release.xcconfig; sourceTree = "<group>"; };
+		433FDFA78AFBF7CA85D8FCFD61894832 /* GooglePlaces-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GooglePlaces-xcframeworks.sh"; sourceTree = "<group>"; };
+		43C478C95A0495C2A10A0D44B8BFC17C /* Pods-LetsGetWeather-LetsGetWeatherUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-resources.sh"; sourceTree = "<group>"; };
+		4A0DA837E9FAECCA7BF6EF5D88983770 /* Pods-LetsGetWeather */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LetsGetWeather"; path = Pods_LetsGetWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5535C190D2D4505E481C03891097541A /* Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h"; sourceTree = "<group>"; };
+		576938FA15C8A7B4744852F4087CA4EF /* GooglePlaces.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GooglePlaces.xcframework; path = Frameworks/GooglePlaces.xcframework; sourceTree = "<group>"; };
+		58D55567BE5BB377C4B0D89C1322D23E /* GooglePlaces-GooglePlacesResources */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GooglePlaces-GooglePlacesResources"; path = GooglePlacesResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E370ECCE74B90B09271C8E49A8FDCC6 /* Pods-LetsGetWeatherTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LetsGetWeatherTests.modulemap"; sourceTree = "<group>"; };
+		6020B5FB84951FE5E4CE58F8A5F60D24 /* Pods-LetsGetWeatherTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LetsGetWeatherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65A0FDC6D28A9A3940852D011C70A68D /* Pods-LetsGetWeatherTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LetsGetWeatherTests"; path = Pods_LetsGetWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E93CB61B4B62F1D626CA1697746F971 /* Pods-LetsGetWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetsGetWeather-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74F1DDB42B659F1968C3DEFD0B903AAB /* Pods-LetsGetWeather-LetsGetWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeather-LetsGetWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		781907402A4B6755561BA2BF08B4A5A4 /* Pods-LetsGetWeather-LetsGetWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeather-LetsGetWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CDA8D3DC3D97DC696A1345212B478F4 /* Pods-LetsGetWeatherTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeatherTests-Info.plist"; sourceTree = "<group>"; };
+		9120A3C19D78295C3CA3C5037F96EFA5 /* Pods-LetsGetWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		913C8EEF816E1CC6B2515B214F642225 /* Pods-LetsGetWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LetsGetWeather.modulemap"; sourceTree = "<group>"; };
+		932C108FBC4ECA6ECFC4E7B48082DFAF /* Pods-LetsGetWeather-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LetsGetWeather-resources.sh"; sourceTree = "<group>"; };
+		952ECA21FE626D38A69889C747EFA25F /* Pods-LetsGetWeatherTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetsGetWeatherTests-dummy.m"; sourceTree = "<group>"; };
+		97392A15ECF4EE8AFC36C15F276BBA25 /* Pods-LetsGetWeather-LetsGetWeatherUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LetsGetWeather-LetsGetWeatherUITests.modulemap"; sourceTree = "<group>"; };
+		9B4758320CE54386CA471D481E2F3A3F /* ResourceBundle-GooglePlacesResources-GooglePlaces-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GooglePlacesResources-GooglePlaces-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F0BA1747F635E404DB0C16E619FD515 /* Pods-LetsGetWeatherTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeatherTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC1D9D504DA94F7D6C8C5CBCEFCF4667 /* Pods-LetsGetWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeather-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF84723E131F2E2042E4D22287002EAD /* Pods-LetsGetWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LetsGetWeather-dummy.m"; sourceTree = "<group>"; };
+		B5003F96CCC56A84029284C103B9DA1D /* Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D0AD52851DDAC2EC380572FD72C3443E /* Pods-LetsGetWeather-LetsGetWeatherUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LetsGetWeather-LetsGetWeatherUITests"; path = Pods_LetsGetWeather_LetsGetWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB6FF2ACA601F5969E329FEAAFDE76A /* Pods-LetsGetWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E028173EA71605EE08D97858A1CDFE08 /* Pods-LetsGetWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LetsGetWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8E12DA32B3856970D2E3443A2CC8877 /* GMSEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMSEmpty.h; path = Sources/GMSEmpty.h; sourceTree = "<group>"; };
+		FEE80F1CE9D0EC31E6FB8D300F1E2987 /* Pods-LetsGetWeatherTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LetsGetWeatherTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DAC219D4ABE81111E039B140994F710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36ED681AF7B3330BB1E7DA04B950DADF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6325F31D3FD2A5C01630D69DCF861EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBE2018F3C89BD966D2DEDB8F286055 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D317060CD9D1CC571D5BD599DFD0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BCEEC891EBC70A0199FC8BE57567BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4309F7BBE2E513F344EC9BCBDB7987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F09D0409F7D231BAEABEA856909FE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16C6416F7720EE37A4926509425FF69A /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		597DD09851FE078C1650DE98CEE4A87D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCF4CB260A5F61EABD233E0E6BA01459 /* GooglePlaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A5341177AEA740B862620A795A83A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				576938FA15C8A7B4744852F4087CA4EF /* GooglePlaces.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A153DBC95A107C7D47A283AD0576655D /* Pods-LetsGetWeather-LetsGetWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97392A15ECF4EE8AFC36C15F276BBA25 /* Pods-LetsGetWeather-LetsGetWeatherUITests.modulemap */,
+				3B2F1F8142144DCC94029FF82B2FD1BB /* Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.markdown */,
+				B5003F96CCC56A84029284C103B9DA1D /* Pods-LetsGetWeather-LetsGetWeatherUITests-acknowledgements.plist */,
+				246A1182AA3F976FDF077221F3626B15 /* Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m */,
+				1996A570190D0CC22F32FE63E101D394 /* Pods-LetsGetWeather-LetsGetWeatherUITests-Info.plist */,
+				43C478C95A0495C2A10A0D44B8BFC17C /* Pods-LetsGetWeather-LetsGetWeatherUITests-resources.sh */,
+				5535C190D2D4505E481C03891097541A /* Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h */,
+				781907402A4B6755561BA2BF08B4A5A4 /* Pods-LetsGetWeather-LetsGetWeatherUITests.debug.xcconfig */,
+				74F1DDB42B659F1968C3DEFD0B903AAB /* Pods-LetsGetWeather-LetsGetWeatherUITests.release.xcconfig */,
+			);
+			name = "Pods-LetsGetWeather-LetsGetWeatherUITests";
+			path = "Target Support Files/Pods-LetsGetWeather-LetsGetWeatherUITests";
+			sourceTree = "<group>";
+		};
+		ABE784FD70F1ADB8F8E09355ACB502E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				433FDFA78AFBF7CA85D8FCFD61894832 /* GooglePlaces-xcframeworks.sh */,
+				1F7441AC73C17EB43F5BE6A556D88A40 /* GooglePlaces.debug.xcconfig */,
+				4152E1BCF67E92CC9A682C45810F44F1 /* GooglePlaces.release.xcconfig */,
+				9B4758320CE54386CA471D481E2F3A3F /* ResourceBundle-GooglePlacesResources-GooglePlaces-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		B7865CA502F21B82E7CA6B2987A95980 /* Pods-LetsGetWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E370ECCE74B90B09271C8E49A8FDCC6 /* Pods-LetsGetWeatherTests.modulemap */,
+				6020B5FB84951FE5E4CE58F8A5F60D24 /* Pods-LetsGetWeatherTests-acknowledgements.markdown */,
+				9F0BA1747F635E404DB0C16E619FD515 /* Pods-LetsGetWeatherTests-acknowledgements.plist */,
+				952ECA21FE626D38A69889C747EFA25F /* Pods-LetsGetWeatherTests-dummy.m */,
+				7CDA8D3DC3D97DC696A1345212B478F4 /* Pods-LetsGetWeatherTests-Info.plist */,
+				FEE80F1CE9D0EC31E6FB8D300F1E2987 /* Pods-LetsGetWeatherTests-umbrella.h */,
+				DEB6FF2ACA601F5969E329FEAAFDE76A /* Pods-LetsGetWeatherTests.debug.xcconfig */,
+				E028173EA71605EE08D97858A1CDFE08 /* Pods-LetsGetWeatherTests.release.xcconfig */,
+			);
+			name = "Pods-LetsGetWeatherTests";
+			path = "Target Support Files/Pods-LetsGetWeatherTests";
+			sourceTree = "<group>";
+		};
+		BCF4CB260A5F61EABD233E0E6BA01459 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E8E12DA32B3856970D2E3443A2CC8877 /* GMSEmpty.h */,
+				7A5341177AEA740B862620A795A83A2D /* Frameworks */,
+				33F09D0409F7D231BAEABEA856909FE7 /* Resources */,
+				ABE784FD70F1ADB8F8E09355ACB502E1 /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		BDBB2AA198CB1E99910A0A5AA9C1E42E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58D55567BE5BB377C4B0D89C1322D23E /* GooglePlaces-GooglePlacesResources */,
+				4A0DA837E9FAECCA7BF6EF5D88983770 /* Pods-LetsGetWeather */,
+				D0AD52851DDAC2EC380572FD72C3443E /* Pods-LetsGetWeather-LetsGetWeatherUITests */,
+				65A0FDC6D28A9A3940852D011C70A68D /* Pods-LetsGetWeatherTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C477F0728B57A3BD3EB409663ABAC6DD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7749D8203911D4C180D2018BDEE7E7F /* Pods-LetsGetWeather */,
+				A153DBC95A107C7D47A283AD0576655D /* Pods-LetsGetWeather-LetsGetWeatherUITests */,
+				B7865CA502F21B82E7CA6B2987A95980 /* Pods-LetsGetWeatherTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				597DD09851FE078C1650DE98CEE4A87D /* Pods */,
+				BDBB2AA198CB1E99910A0A5AA9C1E42E /* Products */,
+				C477F0728B57A3BD3EB409663ABAC6DD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7749D8203911D4C180D2018BDEE7E7F /* Pods-LetsGetWeather */ = {
+			isa = PBXGroup;
+			children = (
+				913C8EEF816E1CC6B2515B214F642225 /* Pods-LetsGetWeather.modulemap */,
+				060B9ADC98E962EF434745B4C12D039F /* Pods-LetsGetWeather-acknowledgements.markdown */,
+				AC1D9D504DA94F7D6C8C5CBCEFCF4667 /* Pods-LetsGetWeather-acknowledgements.plist */,
+				AF84723E131F2E2042E4D22287002EAD /* Pods-LetsGetWeather-dummy.m */,
+				002BE201E0F22BBFD2946C516ADA415E /* Pods-LetsGetWeather-Info.plist */,
+				932C108FBC4ECA6ECFC4E7B48082DFAF /* Pods-LetsGetWeather-resources.sh */,
+				6E93CB61B4B62F1D626CA1697746F971 /* Pods-LetsGetWeather-umbrella.h */,
+				9120A3C19D78295C3CA3C5037F96EFA5 /* Pods-LetsGetWeather.debug.xcconfig */,
+				2B227FBB989F99627D848A5CD61DB00F /* Pods-LetsGetWeather.release.xcconfig */,
+			);
+			name = "Pods-LetsGetWeather";
+			path = "Target Support Files/Pods-LetsGetWeather";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5FA95073A755373A3672A929AC72B0CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC71665F4D7094740920DA143CF93054 /* Pods-LetsGetWeather-LetsGetWeatherUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAACE2C783C2FC8FE6DD0B45A1DE602F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A51C2713F1ECD86821D59F915E385FBC /* Pods-LetsGetWeatherTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6D8F01DCDE6D4AD4CACDA70C109AD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4671574860CB8B87D2AD70A18FF28071 /* Pods-LetsGetWeather-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		285AAD0A8192022DACE2DAFE30D6CD52 /* GooglePlaces-GooglePlacesResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7CA43EB24A17C729BA48A061DE50F8 /* Build configuration list for PBXNativeTarget "GooglePlaces-GooglePlacesResources" */;
+			buildPhases = (
+				1858DD18BA68AEB19E7EF1252FCC0728 /* Sources */,
+				ED4309F7BBE2E513F344EC9BCBDB7987 /* Frameworks */,
+				1A48847FCE4775C4F42A92A633B31263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GooglePlaces-GooglePlacesResources";
+			productName = GooglePlacesResources;
+			productReference = 58D55567BE5BB377C4B0D89C1322D23E /* GooglePlaces-GooglePlacesResources */;
+			productType = "com.apple.product-type.bundle";
+		};
+		713D9F3A9E6B1A2506F04D89CD491880 /* Pods-LetsGetWeather-LetsGetWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0583295A2A01FBFCAE429F507CD952E8 /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeather-LetsGetWeatherUITests" */;
+			buildPhases = (
+				5FA95073A755373A3672A929AC72B0CD /* Headers */,
+				A18F47243B9F4032F2E5F857F57952E0 /* Sources */,
+				6325F31D3FD2A5C01630D69DCF861EBF /* Frameworks */,
+				E481E315CA6B59A02A9E4F8E6BCEFA84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D8A2676F376C593C138AC92E03299B /* PBXTargetDependency */,
+			);
+			name = "Pods-LetsGetWeather-LetsGetWeatherUITests";
+			productName = Pods_LetsGetWeather_LetsGetWeatherUITests;
+			productReference = D0AD52851DDAC2EC380572FD72C3443E /* Pods-LetsGetWeather-LetsGetWeatherUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		B928585AAB2B54FDBE58B36EEEA14BB8 /* Pods-LetsGetWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F6A5F08DD10869566A45B2FAF33E1E /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeather" */;
+			buildPhases = (
+				ED6D8F01DCDE6D4AD4CACDA70C109AD9 /* Headers */,
+				CA0DF9FC250113D95788B12F2848660B /* Sources */,
+				E52D317060CD9D1CC571D5BD599DFD0E /* Frameworks */,
+				C046CD9B9636882161937AAD716C3A94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE3E3ABECCEAC70E498AD1F20C51DAB /* PBXTargetDependency */,
+			);
+			name = "Pods-LetsGetWeather";
+			productName = Pods_LetsGetWeather;
+			productReference = 4A0DA837E9FAECCA7BF6EF5D88983770 /* Pods-LetsGetWeather */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE304CA995E25C1BA99A7AD2D9FF13D8 /* Pods-LetsGetWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 590DF25578FE7574693114ED1B9DADAA /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeatherTests" */;
+			buildPhases = (
+				AAACE2C783C2FC8FE6DD0B45A1DE602F /* Headers */,
+				0404FDA63077C2010F19BC2254956780 /* Sources */,
+				1DAC219D4ABE81111E039B140994F710 /* Frameworks */,
+				250AE9696B612B955316CE64F8B6EE9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0150835D8A64FE595A006A1A273FD0 /* PBXTargetDependency */,
+			);
+			name = "Pods-LetsGetWeatherTests";
+			productName = Pods_LetsGetWeatherTests;
+			productReference = 65A0FDC6D28A9A3940852D011C70A68D /* Pods-LetsGetWeatherTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BDBB2AA198CB1E99910A0A5AA9C1E42E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
+				285AAD0A8192022DACE2DAFE30D6CD52 /* GooglePlaces-GooglePlacesResources */,
+				B928585AAB2B54FDBE58B36EEEA14BB8 /* Pods-LetsGetWeather */,
+				713D9F3A9E6B1A2506F04D89CD491880 /* Pods-LetsGetWeather-LetsGetWeatherUITests */,
+				EE304CA995E25C1BA99A7AD2D9FF13D8 /* Pods-LetsGetWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A48847FCE4775C4F42A92A633B31263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28492010468750E9189B71146A6E1DA6 /* GooglePlaces.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250AE9696B612B955316CE64F8B6EE9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C046CD9B9636882161937AAD716C3A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481E315CA6B59A02A9E4F8E6BCEFA84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C53F63B615C49C159CEC84184FD1687 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GooglePlaces/GooglePlaces-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/GooglePlaces/GooglePlaces-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GooglePlaces/GooglePlaces-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0404FDA63077C2010F19BC2254956780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA006BBCBC4110DE18C158195AD1185 /* Pods-LetsGetWeatherTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1858DD18BA68AEB19E7EF1252FCC0728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18F47243B9F4032F2E5F857F57952E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D6B27873EC6912C32125031CB111D32 /* Pods-LetsGetWeather-LetsGetWeatherUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0DF9FC250113D95788B12F2848660B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D599094BCF22CE8544F406510CF00F8F /* Pods-LetsGetWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D0150835D8A64FE595A006A1A273FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LetsGetWeather";
+			target = B928585AAB2B54FDBE58B36EEEA14BB8 /* Pods-LetsGetWeather */;
+			targetProxy = 6FE3FBA67882F1671FD0FCBB685FAF88 /* PBXContainerItemProxy */;
+		};
+		A90318251BED9DF57263E157C08FCEF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GooglePlaces-GooglePlacesResources";
+			target = 285AAD0A8192022DACE2DAFE30D6CD52 /* GooglePlaces-GooglePlacesResources */;
+			targetProxy = 242C9C7DEF1B31F09597AED59E64994A /* PBXContainerItemProxy */;
+		};
+		F7D8A2676F376C593C138AC92E03299B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 7919C60A634E4C869EADD529C0FF7119 /* PBXContainerItemProxy */;
+		};
+		FAE3E3ABECCEAC70E498AD1F20C51DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 2C95EB7E193D2EB321947875F1B656E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		286DF6FE12973C3426B94B851F58EE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4152E1BCF67E92CC9A682C45810F44F1 /* GooglePlaces.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GooglePlaces";
+				IBSC_MODULE = GooglePlaces;
+				INFOPLIST_FILE = "Target Support Files/GooglePlaces/ResourceBundle-GooglePlacesResources-GooglePlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GooglePlacesResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2FC9884D84C4C11417F216AF92C9FE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9120A3C19D78295C3CA3C5037F96EFA5 /* Pods-LetsGetWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeather/Pods-LetsGetWeather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeather/Pods-LetsGetWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E9520A9D9EBD392E2A046DB7A557E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F1DDB42B659F1968C3DEFD0B903AAB /* Pods-LetsGetWeather-LetsGetWeatherUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeather-LetsGetWeatherUITests/Pods-LetsGetWeather-LetsGetWeatherUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeather-LetsGetWeatherUITests/Pods-LetsGetWeather-LetsGetWeatherUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C98674DE2C994BC730135431F8C0904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B227FBB989F99627D848A5CD61DB00F /* Pods-LetsGetWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeather/Pods-LetsGetWeather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeather/Pods-LetsGetWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		96CEAE01E70EE9146BBEB7272E867A94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E028173EA71605EE08D97858A1CDFE08 /* Pods-LetsGetWeatherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeatherTests/Pods-LetsGetWeatherTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeatherTests/Pods-LetsGetWeatherTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBE0D0E9260B7788C436A51B2CE6E695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7441AC73C17EB43F5BE6A556D88A40 /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GooglePlaces";
+				IBSC_MODULE = GooglePlaces;
+				INFOPLIST_FILE = "Target Support Files/GooglePlaces/ResourceBundle-GooglePlacesResources-GooglePlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = GooglePlacesResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CEA1B8AF2FF7211272990A0A536155AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781907402A4B6755561BA2BF08B4A5A4 /* Pods-LetsGetWeather-LetsGetWeatherUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeather-LetsGetWeatherUITests/Pods-LetsGetWeather-LetsGetWeatherUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeather-LetsGetWeatherUITests/Pods-LetsGetWeather-LetsGetWeatherUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCD0AAA553584ACB285AACA4AEFD4DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7441AC73C17EB43F5BE6A556D88A40 /* GooglePlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0D9ECB5D43533056E3C43F3E87B5CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB6FF2ACA601F5969E329FEAAFDE76A /* Pods-LetsGetWeatherTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LetsGetWeatherTests/Pods-LetsGetWeatherTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LetsGetWeatherTests/Pods-LetsGetWeatherTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC9E06B5419C1A597A7DA9CECE03C886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4152E1BCF67E92CC9A682C45810F44F1 /* GooglePlaces.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0583295A2A01FBFCAE429F507CD952E8 /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeather-LetsGetWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA1B8AF2FF7211272990A0A536155AE /* Debug */,
+				6E9520A9D9EBD392E2A046DB7A557E20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F6A5F08DD10869566A45B2FAF33E1E /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC9884D84C4C11417F216AF92C9FE1E /* Debug */,
+				8C98674DE2C994BC730135431F8C0904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		590DF25578FE7574693114ED1B9DADAA /* Build configuration list for PBXNativeTarget "Pods-LetsGetWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D9ECB5D43533056E3C43F3E87B5CF2 /* Debug */,
+				96CEAE01E70EE9146BBEB7272E867A94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7CA43EB24A17C729BA48A061DE50F8 /* Build configuration list for PBXNativeTarget "GooglePlaces-GooglePlacesResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBE0D0E9260B7788C436A51B2CE6E695 /* Debug */,
+				286DF6FE12973C3426B94B851F58EE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C77040D703478EDADEB4E839F298401F /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD0AAA553584ACB285AACA4AEFD4DA4 /* Debug */,
+				EC9E06B5419C1A597A7DA9CECE03C886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

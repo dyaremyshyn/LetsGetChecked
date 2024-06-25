@@ -8,7 +8,11 @@
 import Foundation
 
 struct Constants {
-    static var apiKey: String {
+    static var weatherAPIKey: String {
         return "55a73dadc11041ea8b0164002242506"
+    }
+    
+    static var googleAPIKey: String {
+        return "AIzaSyArSB3i9WX6wqZKKrbpLOcmjKh8ACnXUH0"
     }
 }
