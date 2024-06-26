@@ -44,11 +44,11 @@ class WeatherViewModel: ObservableObject {
     
     var searchPlaceholder: String {
         // will be replaced by Localized
-        "Search City"
+        "Search City or Postal Code"
     }
     
     public func select(place: String) {
-        let url = URL(string: "http://api.weatherapi.com/v1/current.json?key=\(Constants.weatherAPIKey)&q=\(place)")!
+        let url = URL(string: "https://api.weatherapi.com/v1/current.json?key=\(Constants.weatherAPIKey)&q=\(place)")!
         
         networkLoader.loadData(from: url)
             .map(\.current)
