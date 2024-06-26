@@ -11,9 +11,21 @@ import GooglePlaces
 
 public class WeatherViewController: UITableViewController {
     
-    private var resultsViewController: GMSAutocompleteResultsViewController?
-    private var searchController: UISearchController?
+    lazy var resultsViewController: GMSAutocompleteResultsViewController = {
+        let viewController = GMSAutocompleteResultsViewController()
+        viewController.delegate = self
+        return viewController
+    }()
     
+    lazy var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: resultsViewController)
+        searchController.searchResultsUpdater = resultsViewController
+        searchController.searchBar.sizeToFit()
+        searchController.searchBar.placeholder = viewModel?.searchPlaceholder
+        searchController.hidesNavigationBarDuringPresentation = false
+        return searchController
+    }()
+        
     var cancellables = Set<AnyCancellable>()
     var viewModel: WeatherViewModel? {
         didSet { bind() }
@@ -41,7 +53,7 @@ public class WeatherViewController: UITableViewController {
     
     
     @objc func search() {
-        guard let place = searchController?.searchBar.text else { return }
+        guard let place = searchController.searchBar.text else { return }
         viewModel?.select(place: place)
     }
     
@@ -51,31 +63,18 @@ public class WeatherViewController: UITableViewController {
 extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
     
     private func addSearchBarToNavigationItem() {
-        resultsViewController = GMSAutocompleteResultsViewController()
-        resultsViewController?.delegate = self
-
-        searchController = UISearchController(searchResultsController: resultsViewController)
-        searchController?.searchResultsUpdater = resultsViewController
-        
-        // Put the search bar in the navigation bar.
-        searchController?.searchBar.sizeToFit()
-        searchController?.searchBar.placeholder = viewModel?.searchPlaceholder
-        navigationItem.titleView = searchController?.searchBar
-
+        navigationItem.titleView = searchController.searchBar
         // When UISearchController presents the results view, present it in
         // this view controller, not one further up the chain.
         definesPresentationContext = true
-
-        // Prevent the navigation bar from being hidden when searching.
-        searchController?.hidesNavigationBarDuringPresentation = false
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
-        searchController?.isActive = false
+        searchController.isActive = false
         print("Place name: \(place.name)")
         print("Place address: \(place.formattedAddress)")
         print("Place id: \(place.placeID)")
-        searchController?.searchBar.text = place.formattedAddress
+        searchController.searchBar.text = place.formattedAddress
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
