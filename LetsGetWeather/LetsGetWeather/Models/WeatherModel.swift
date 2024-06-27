@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import GooglePlaces
 
 struct WeatherModel {
-    let selectedPlace: GooglePlaceModel?
+    let selectedPlace: GMSPlace?
     let current: CurrentModel?
 }

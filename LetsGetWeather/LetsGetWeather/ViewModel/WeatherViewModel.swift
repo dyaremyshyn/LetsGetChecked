@@ -10,9 +10,9 @@ import Combine
 import GooglePlaces
 
 class WeatherViewModel: ObservableObject {
+    @Published var fetchedWeather: WeatherModel?
     @Published var selectedPlaces: [WeatherModel] = []
-    @Published var selectedResult: GooglePlaceModel?
-    @Published var searchResults: [GooglePlaceModel] = []
+    @Published var selectedAutocompleteResult: GMSPlace?
 
     private let networkLoader: NetworkDataLoader
     private var cancellables = Set<AnyCancellable>()
