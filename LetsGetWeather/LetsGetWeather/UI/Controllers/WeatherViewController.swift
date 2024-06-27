@@ -42,6 +42,11 @@ public class WeatherViewController: UITableViewController {
         super.viewDidLoad()
         setupView()
     }
+    
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.sizeTableHeaderToFit()
+    }
 
     private func bind() {
         viewModel?.$placesList
@@ -56,17 +61,30 @@ public class WeatherViewController: UITableViewController {
                 self.showAlert(for: weather)
             }
             .store(in: &cancellables)
+        
+        viewModel?.$errorMessage
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] message in
+                self?.display(errorMessage: message)
+            }
+            .store(in: &cancellables)
     }
     
     private func setupView() {
         view.backgroundColor = .systemBackground
-        title = viewModel?.title
 
         addSearchBarToNavigationItem()
         
         tableView.register(WeatherViewCell.self, forCellReuseIdentifier: WeatherViewCell.identifier)
         tableView.dataSource = self
         tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.tableHeaderView = errorView.makeContainer()
+        
+        errorView.onHide = { [weak self] in
+            self?.tableView.beginUpdates()
+            self?.tableView.sizeTableHeaderToFit()
+            self?.tableView.endUpdates()
+        }
     }
     
     private func showAlert(for weather: WeatherModel) {
@@ -75,7 +93,7 @@ public class WeatherViewController: UITableViewController {
         let humidityText = "Humidity: \(weather.current?.humidity?.description ?? "not found")"
         
         let alert = UIAlertController(
-            title: "\(viewModel?.selectedPlace?.name ?? "") Weather",
+            title: viewModel?.alertTitle, //viewModel?.selectedPlace?.name ?? "" + 
             message: temperatureText + conditionText + humidityText ,
             preferredStyle: .alert
         )
@@ -87,7 +105,6 @@ public class WeatherViewController: UITableViewController {
         guard let place = searchController.searchBar.text else { return }
         viewModel?.select(place: place)
     }
-    
 }
 
 // MARK: Google Place API Integration
@@ -106,13 +123,15 @@ extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
         searchController.isActive = false
         searchController.searchBar.text = place.formattedAddress
         viewModel?.selected(place: place)
+        display(errorMessage: nil)
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
-        
+        display(errorMessage: "Autocomplete Error")
     }
 }
 
+//MARK: TableView DataSource
 extension WeatherViewController {
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,6 +151,14 @@ extension WeatherViewController {
         let selectedLocation = viewModel?.placesList[indexPath.row]
         viewModel?.select(place: selectedLocation?.selectedPlace?.formattedAddress ?? "")
         viewModel?.selected(place: selectedLocation?.selectedPlace)
+    }
+}
 
+//MARK: Display Weather Error protocol 
+extension WeatherViewController: WeatherErrorView {
+    // Displaying error message in the header table view
+    public func display(errorMessage: String?) {
+        errorView.message = errorMessage
+        tableView.reloadData()
     }
 }

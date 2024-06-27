@@ -10,8 +10,7 @@ import UIKit
 
 class WeatherViewCell: UITableViewCell {
 
-    static let identifier = "WeatherViewCell"
-    private var model: WeatherModel?
+    static let identifier = String(describing: WeatherViewCell.self)
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -42,7 +41,6 @@ class WeatherViewCell: UITableViewCell {
     }
     
     public func updateCell(model: WeatherModel){
-        self.model = model
         titleLabel.text = model.selectedPlace?.formattedAddress
     }
 }

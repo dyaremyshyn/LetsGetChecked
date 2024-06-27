@@ -1,0 +1,4 @@
+"WEATHER_SEARCH_PLACEHOLDER" = "Search City or Postal Code";
+"WEATHER_ALERT_TITLE" = "Weather";
+"WEATHER_GENERIC_CONNECTION_ERROR" = "Couldn't connect to server";
+"WEATHER_AUTOCOMPLETE_ERROR" = "Autocomplete Error";

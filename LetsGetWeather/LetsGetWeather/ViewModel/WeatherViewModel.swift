@@ -13,6 +13,7 @@ class WeatherViewModel: ObservableObject {
     @Published var fetchedWeather: WeatherModel?
     @Published var placesList: [WeatherModel] = []
     @Published var selectedPlace: GMSPlace?
+    @Published var errorMessage: String? = nil
 
     private let networkLoader: NetworkDataLoader
     private var cancellables = Set<AnyCancellable>()
@@ -21,14 +22,31 @@ class WeatherViewModel: ObservableObject {
         self.networkLoader = networkLoader
     }
     
-    var title: String {
-        // will be replaced by Localized
-        "Weather"
+    var alertTitle: String {
+        NSLocalizedString(
+            "WEATHER_ALERT_TITLE",
+            tableName: "Weather",
+            bundle: .main,
+            comment: "Alert Controller title"
+        )
     }
     
     var searchPlaceholder: String {
-        // will be replaced by Localized
-        "Search City or Postal Code"
+        NSLocalizedString(
+            "WEATHER_SEARCH_PLACEHOLDER",
+            tableName: "Weather",
+            bundle: .main,
+            comment: "Search Placeholder"
+        )
+    }
+    
+    var servicerErrorMessage: String {
+        NSLocalizedString(
+            "WEATHER_GENERIC_CONNECTION_ERROR",
+            tableName: "Weather",
+            bundle: .main,
+            comment: "Search Placeholder"
+        )
     }
     
     public func selected(place: GMSPlace?) {
@@ -41,16 +59,17 @@ class WeatherViewModel: ObservableObject {
         networkLoader.loadData(from: url)
             .map(\.current)
             .receive(on: DispatchQueue.main)
-            .sink { completion in
+            .sink { [weak self] completion in
+                guard let self else { return }
                 switch completion {
-                case .failure(let error):
-                    // Deal with error
-                    print(error.localizedDescription)
+                case .failure(_):
+                    self.errorMessage = self.servicerErrorMessage
                 case .finished: ()
                 }
             } receiveValue: { [weak self] current in
                 guard let self else { return }
                 appendReatrivedWeatherFor(current)
+                self.errorMessage = nil
             }
             .store(in: &cancellables)
     }
