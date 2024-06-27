@@ -46,7 +46,8 @@ class WeatherViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] current in
                 guard let self else { return }
-                self.selectedPlaces.append(WeatherModel(selectedPlace: selectedResult, current: current))
+                fetchedWeather = WeatherModel(selectedPlace: selectedAutocompleteResult, current: current)
+                self.selectedPlaces.append(WeatherModel(selectedPlace: selectedAutocompleteResult, current: current))
             }
             .store(in: &cancellables)
     }

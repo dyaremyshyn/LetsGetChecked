@@ -26,11 +26,10 @@ public class WeatherViewController: UITableViewController {
         return searchController
     }()
         
-    var cancellables = Set<AnyCancellable>()
+    private var cancellables = Set<AnyCancellable>()
     var viewModel: WeatherViewModel? {
         didSet { bind() }
     }
-    
     
     // MARK: Lifecycle
     public override func viewDidLoad() {
@@ -40,6 +39,15 @@ public class WeatherViewController: UITableViewController {
 
     private func bind() {
         
+        viewModel?.$fetchedWeather
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] weather in
+                guard let weather = weather else { return }
+                let alert = UIAlertController(title: "Weather", message: "Temperature: \(weather.current?.tempC)°C\nCondition: \(weather.current?.condition?.text)\nHumidity: \(weather.current?.humidity)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default))
+                self?.present(alert, animated: true)
+            }
+            .store(in: &cancellables)
     }
     
     private func setupView() {
@@ -59,7 +67,7 @@ public class WeatherViewController: UITableViewController {
     
 }
 
-// Google Place integration with the view
+// MARK: Google Place API Integration
 extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
     
     private func addSearchBarToNavigationItem() {
@@ -71,10 +79,8 @@ extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
         searchController.isActive = false
-        print("Place name: \(place.name)")
-        print("Place address: \(place.formattedAddress)")
-        print("Place id: \(place.placeID)")
         searchController.searchBar.text = place.formattedAddress
+        
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
