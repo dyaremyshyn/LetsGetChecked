@@ -11,8 +11,8 @@ import GooglePlaces
 
 class WeatherViewModel: ObservableObject {
     @Published var fetchedWeather: WeatherModel?
-    @Published var selectedPlaces: [WeatherModel] = []
-    @Published var selectedAutocompleteResult: GMSPlace?
+    @Published var placesList: [WeatherModel] = []
+    @Published var selectedPlace: GMSPlace?
 
     private let networkLoader: NetworkDataLoader
     private var cancellables = Set<AnyCancellable>()
@@ -31,6 +31,10 @@ class WeatherViewModel: ObservableObject {
         "Search City or Postal Code"
     }
     
+    public func selected(place: GMSPlace?) {
+        selectedPlace = place
+    }
+    
     public func select(place: String) {
         let url = URL(string: "https://api.weatherapi.com/v1/current.json?key=\(Constants.weatherAPIKey)&q=\(place)")!
         
@@ -46,9 +50,15 @@ class WeatherViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] current in
                 guard let self else { return }
-                fetchedWeather = WeatherModel(selectedPlace: selectedAutocompleteResult, current: current)
-                self.selectedPlaces.append(WeatherModel(selectedPlace: selectedAutocompleteResult, current: current))
+                appendReatrivedWeatherFor(current)
             }
             .store(in: &cancellables)
+    }
+    
+    private func appendReatrivedWeatherFor(_ model: CurrentModel?) {
+        fetchedWeather = WeatherModel(selectedPlace: selectedPlace, current: model)
+        if placesList.filter({ $0.selectedPlace?.placeID == selectedPlace?.placeID }).count == 0 {
+            placesList.append(WeatherModel(selectedPlace: selectedPlace, current: model))
+        }
     }
 }

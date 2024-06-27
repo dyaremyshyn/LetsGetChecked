@@ -19,6 +19,7 @@
 		8C1573D92C2B6A1400152A90 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573D82C2B6A1400152A90 /* Constants.swift */; };
 		8C1573DB2C2B835D00152A90 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573DA2C2B835D00152A90 /* WeatherModel.swift */; };
 		8C1573E12C2B89FC00152A90 /* WeatherComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573E02C2B89FC00152A90 /* WeatherComposer.swift */; };
+		8C1573E92C2D66C700152A90 /* WeatherViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573E82C2D66C700152A90 /* WeatherViewCell.swift */; };
 		8CD802132C2B2BF100F2E383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802122C2B2BF100F2E383 /* AppDelegate.swift */; };
 		8CD802152C2B2BF100F2E383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */; };
 		8CD802172C2B2BF100F2E383 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802162C2B2BF100F2E383 /* WeatherViewController.swift */; };
@@ -62,6 +63,7 @@
 		8C1573D82C2B6A1400152A90 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8C1573DA2C2B835D00152A90 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		8C1573E02C2B89FC00152A90 /* WeatherComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherComposer.swift; sourceTree = "<group>"; };
+		8C1573E82C2D66C700152A90 /* WeatherViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewCell.swift; sourceTree = "<group>"; };
 		8CD8020F2C2B2BF100F2E383 /* LetsGetWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGetWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD802122C2B2BF100F2E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		8C1573C02C2B386200152A90 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8C1573E72C2D66AE00152A90 /* ViewCells */,
 				8C1573DF2C2B89E400152A90 /* ViewControllers */,
 				8C1573DE2C2B89D600152A90 /* Composers */,
 				8CD8021D2C2B2BF200F2E383 /* LaunchScreen.storyboard */,
@@ -189,6 +192,14 @@
 				8CD802162C2B2BF100F2E383 /* WeatherViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C1573E72C2D66AE00152A90 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8C1573E82C2D66C700152A90 /* WeatherViewCell.swift */,
+			);
+			path = ViewCells;
 			sourceTree = "<group>";
 		};
 		8CD802062C2B2BF100F2E383 = {
@@ -499,6 +510,7 @@
 				8CD802172C2B2BF100F2E383 /* WeatherViewController.swift in Sources */,
 				8C1573D92C2B6A1400152A90 /* Constants.swift in Sources */,
 				8C1573CD2C2B3A0900152A90 /* CurrentModel.swift in Sources */,
+				8C1573E92C2D66C700152A90 /* WeatherViewCell.swift in Sources */,
 				8C1573C52C2B393F00152A90 /* WeatherViewModel.swift in Sources */,
 				8CD802132C2B2BF100F2E383 /* AppDelegate.swift in Sources */,
 				8C1573C92C2B397C00152A90 /* Networking.swift in Sources */,
