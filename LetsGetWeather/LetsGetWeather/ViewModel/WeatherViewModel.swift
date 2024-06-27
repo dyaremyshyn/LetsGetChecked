@@ -20,22 +20,6 @@ class WeatherViewModel: ObservableObject {
     init(networkLoader: NetworkDataLoader) {
         self.networkLoader = networkLoader
     }
-
-    public func searchLocation(query: String) {
-        GMSPlacesClient.shared().findAutocompletePredictions(
-            fromQuery: query,
-            filter: GMSAutocompleteFilter(),
-            sessionToken: nil) { [weak self] (results, error) in
-                guard let self, error == nil else {
-                    print("Error finding predictions: \(error?.localizedDescription)")
-                    return
-                }
-                print("\(results?.first?.attributedFullText.string) ; \(results?.first?.placeID)\n")
-                self.searchResults = results?.compactMap {
-                    GooglePlaceModel(name: $0.attributedFullText.string, id: $0.placeID)
-                } ?? []
-        }
-    }
     
     var title: String {
         // will be replaced by Localized
