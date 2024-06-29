@@ -53,7 +53,7 @@ class WeatherViewModel: ObservableObject {
     private func appendReatrivedWeatherFor(_ model: CurrentModel?) {
         fetchedWeather = WeatherModel(selectedPlace: selectedLocation, current: model)
         if placesList.filter({ $0.selectedPlace?.placeID == selectedLocation?.placeID }).count == 0 {
-            placesList.append(WeatherModel(selectedPlace: selectedLocation, current: model))
+            placesList.insert(WeatherModel(selectedPlace: selectedLocation, current: model), at: 0) // Insert last searched at top 
         }
     }
 }
