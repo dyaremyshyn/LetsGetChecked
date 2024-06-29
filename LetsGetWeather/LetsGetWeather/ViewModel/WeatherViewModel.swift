@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import GooglePlaces
 
 class WeatherViewModel: ObservableObject {
     @Published var fetchedWeather: WeatherModel?
