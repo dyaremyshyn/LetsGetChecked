@@ -155,6 +155,8 @@ extension WeatherViewController: WeatherErrorView {
     public func display(errorMessage: String?) {
         searchController.isActive = false
         errorView.message = errorMessage
-        tableView.reloadData()
+        if errorMessage != nil {
+            tableView.reloadData()
+        }
     }
 }
