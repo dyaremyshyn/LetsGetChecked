@@ -29,5 +29,5 @@ enum Constants {
 
         static var weatherAPIKey: String { storage["weatherAPIKey"] ?? "" }
         static var googleAPIKey: String { storage["googleAPIKey"] ?? "" }
-    }    
+    }
 }
