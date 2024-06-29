@@ -77,7 +77,9 @@ public class WeatherViewController: UITableViewController {
         
         tableView.register(WeatherViewCell.self, forCellReuseIdentifier: WeatherViewCell.identifier)
         tableView.dataSource = self
-        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 120
+        tableView.separatorStyle = .none
         tableView.tableHeaderView = errorView.makeContainer()
         
         errorView.onHide = { [weak self] in
@@ -132,7 +134,7 @@ extension WeatherViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: WeatherViewCell.identifier, for: indexPath) as? WeatherViewCell else {
             return UITableViewCell()
         }
-        cell.titleLabel.text = viewModel?.placesList[indexPath.row].selectedPlace?.formattedAddress
+        cell.updateCell(model: viewModel?.placesList[indexPath.row])
         return cell
     }
 
