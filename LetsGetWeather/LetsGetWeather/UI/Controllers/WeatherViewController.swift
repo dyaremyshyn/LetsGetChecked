@@ -88,22 +88,11 @@ public class WeatherViewController: UITableViewController {
     }
     
     private func showAlert(for weather: WeatherModel) {
-        let temperatureText = "Temperature: \(weather.current?.tempC?.description ?? "not found")°C\n"
-        let conditionText = "Condition: \(weather.current?.condition?.text ?? "not found")\n"
-        let humidityText = "Humidity: \(weather.current?.humidity?.description ?? "not found")"
-        
-        let alert = UIAlertController(
-            title: viewModel?.alertTitle, //viewModel?.selectedPlace?.name ?? "" + 
-            message: temperatureText + conditionText + humidityText ,
-            preferredStyle: .alert
-        )
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+        showAlert(title: viewModel?.alertTitle, message: viewModel?.alertMessage, actionTitle: viewModel?.alertCancel)
     }
     
     @objc func search() {
-        guard let place = searchController.searchBar.text else { return }
-        viewModel?.select(place: place)
+        viewModel?.fetchWeatherFor(location: viewModel?.selectedLocation)
     }
 }
 
@@ -122,12 +111,12 @@ extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
         searchController.isActive = false
         searchController.searchBar.text = place.formattedAddress
-        viewModel?.selected(place: place)
+        viewModel?.selected(location: place)
         display(errorMessage: nil)
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
-        display(errorMessage: "Autocomplete Error")
+        display(errorMessage: viewModel?.autocompleteErrorMessage)
     }
 }
 
@@ -149,8 +138,7 @@ extension WeatherViewController {
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedLocation = viewModel?.placesList[indexPath.row]
-        viewModel?.select(place: selectedLocation?.selectedPlace?.formattedAddress ?? "")
-        viewModel?.selected(place: selectedLocation?.selectedPlace)
+        viewModel?.fetchWeatherFor(location: selectedLocation?.selectedPlace)
     }
 }
 

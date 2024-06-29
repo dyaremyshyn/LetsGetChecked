@@ -11,8 +11,8 @@ public final class WeatherComposer {
     
     private init() {}
     
-    public static func weatherComposedWith(networkLoader: NetworkDataLoader) -> WeatherViewController {
-        let viewModel = WeatherViewModel(networkLoader: networkLoader)
+    public static func weatherComposedWith(weatherLoader: WeatherDataLoader) -> WeatherViewController {
+        let viewModel = WeatherViewModel(weatherLoader: weatherLoader)
         let viewController = WeatherViewController.makeWith(viewModel: viewModel)
         return viewController
     }

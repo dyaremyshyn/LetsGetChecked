@@ -12,51 +12,28 @@ import GooglePlaces
 class WeatherViewModel: ObservableObject {
     @Published var fetchedWeather: WeatherModel?
     @Published var placesList: [WeatherModel] = []
-    @Published var selectedPlace: GMSPlace?
+    @Published var selectedLocation: GMSPlace?
     @Published var errorMessage: String? = nil
 
-    private let networkLoader: NetworkDataLoader
+    private let weatherLoader: WeatherDataLoader
     private var cancellables = Set<AnyCancellable>()
     
-    init(networkLoader: NetworkDataLoader) {
-        self.networkLoader = networkLoader
+    init(weatherLoader: WeatherDataLoader) {
+        self.weatherLoader = weatherLoader
     }
     
-    var alertTitle: String {
-        NSLocalizedString(
-            "WEATHER_ALERT_TITLE",
-            tableName: "Weather",
-            bundle: .main,
-            comment: "Alert Controller title"
-        )
+    
+    public func selected(location: GMSPlace?) {
+        selectedLocation = location
     }
     
-    var searchPlaceholder: String {
-        NSLocalizedString(
-            "WEATHER_SEARCH_PLACEHOLDER",
-            tableName: "Weather",
-            bundle: .main,
-            comment: "Search Placeholder"
-        )
-    }
-    
-    var servicerErrorMessage: String {
-        NSLocalizedString(
-            "WEATHER_GENERIC_CONNECTION_ERROR",
-            tableName: "Weather",
-            bundle: .main,
-            comment: "Search Placeholder"
-        )
-    }
-    
-    public func selected(place: GMSPlace?) {
-        selectedPlace = place
-    }
-    
-    public func select(place: String) {
-        let url = URL(string: "https://api.weatherapi.com/v1/current.json?key=\(Constants.weatherAPIKey)&q=\(place)")!
+    public func fetchWeatherFor(location: GMSPlace?) {
+        selected(location: location)
         
-        networkLoader.loadData(from: url)
+        guard let location = location?.formattedAddress else { return }
+        let url = URL(string: "\(Constants.weatherBaseUrl)?key=\(Constants.weatherAPIKey)&q=\(location)")!
+        
+        weatherLoader.loadData(from: url)
             .map(\.current)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
@@ -75,9 +52,9 @@ class WeatherViewModel: ObservableObject {
     }
     
     private func appendReatrivedWeatherFor(_ model: CurrentModel?) {
-        fetchedWeather = WeatherModel(selectedPlace: selectedPlace, current: model)
-        if placesList.filter({ $0.selectedPlace?.placeID == selectedPlace?.placeID }).count == 0 {
-            placesList.append(WeatherModel(selectedPlace: selectedPlace, current: model))
+        fetchedWeather = WeatherModel(selectedPlace: selectedLocation, current: model)
+        if placesList.filter({ $0.selectedPlace?.placeID == selectedLocation?.placeID }).count == 0 {
+            placesList.append(WeatherModel(selectedPlace: selectedLocation, current: model))
         }
     }
 }

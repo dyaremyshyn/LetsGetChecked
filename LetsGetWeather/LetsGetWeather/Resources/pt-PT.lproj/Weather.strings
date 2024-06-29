@@ -1,0 +1,12 @@
+"WEATHER_SEARCH_PLACEHOLDER" = "Procurar Cidade ou Código Postal";
+"WEATHER_ALERT_TITLE" = "Meteorologia";
+"WEATHER_ALERT_CANCEL" = "Cancelar";
+"WEATHER_GENERIC_CONNECTION_ERROR" = "Não foi possível conectar ao servidor";
+"WEATHER_AUTOCOMPLETE_ERROR" = "Erro de preenchimento automático";
+"WEATHER_ALERT_TEMPERATURE" = "Temperatura:";
+"WEATHER_ALERT_CONDITION" = "Condições:";
+"WEATHER_ALERT_HUMIDITY" = "Humidade:";
+"WEATHER_ALERT_UV" = "UV:";
+"WEATHER_ALERT_WIND_KM" = "Vento:";
+"WEATHER_ALERT_WIND_DIRECTION" = "Direção do Vento:";
+"WEATHER_ALERT_CLOUD" = "Nuvens:";
