@@ -41,6 +41,7 @@ public class WeatherViewController: UITableViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        viewModel?.loadData()
     }
     
     public override func viewDidLayoutSubviews() {
@@ -114,7 +115,7 @@ extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
         display(errorMessage: nil)
         searchController.isActive = false
         searchController.searchBar.text = place.formattedAddress
-        viewModel?.selected(location: place)
+        viewModel?.selected(location: GooglePlace.map(place: place))
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
@@ -150,7 +151,7 @@ extension WeatherViewController {
     
     override public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            viewModel?.placesList.remove(at: indexPath.row)
+            viewModel?.removeSearchedPlace(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

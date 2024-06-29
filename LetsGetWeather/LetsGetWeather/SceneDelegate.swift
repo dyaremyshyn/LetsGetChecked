@@ -12,7 +12,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     private lazy var navigationController = UINavigationController(
-        rootViewController: WeatherComposer.weatherComposedWith(weatherLoader: WeatherNetworkService())
+        rootViewController: WeatherComposer.weatherComposedWith(
+            weatherLoader: WeatherNetworkService(),
+            storageService: StorageService()
+        )
     )
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {        

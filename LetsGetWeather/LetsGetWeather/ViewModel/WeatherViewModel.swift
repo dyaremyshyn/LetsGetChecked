@@ -12,17 +12,24 @@ import GooglePlaces
 class WeatherViewModel: ObservableObject {
     @Published var fetchedWeather: WeatherModel?
     @Published var placesList: [WeatherModel] = []
-    @Published var selectedLocation: GMSPlace?
+    @Published var selectedLocation: GooglePlace?
     @Published var errorMessage: String? = nil
 
     private let weatherLoader: WeatherDataLoader
+    private let storageService: StorageService
     private var cancellables = Set<AnyCancellable>()
     
-    init(weatherLoader: WeatherDataLoader) {
+    init(weatherLoader: WeatherDataLoader, storageService: StorageService) {
         self.weatherLoader = weatherLoader
+        self.storageService = storageService
     }
     
-    public func selected(location: GMSPlace?) {
+    public func loadData() {
+        guard let weatherLocations = storageService.getData() else { return }
+        placesList = weatherLocations
+    }
+    
+    public func selected(location: GooglePlace?) {
         selectedLocation = location
     }
     
@@ -52,12 +59,27 @@ class WeatherViewModel: ObservableObject {
     }
     
     private func appendReatrivedWeatherFor(_ model: CurrentModel?) {
-        fetchedWeather = WeatherModel(selectedPlace: selectedLocation, current: model)
+        fetchedWeather = WeatherModel(
+            selectedPlace: selectedLocation,
+            current: model)
         
         if let index = placesList.firstIndex(where: { $0.selectedPlace?.placeID == selectedLocation?.placeID }) {
             placesList[index] = WeatherModel(selectedPlace: selectedLocation, current: model)
         } else {
-            placesList.insert(WeatherModel(selectedPlace: selectedLocation, current: model), at: 0) // Insert last searched at top
+            // Insert last searched location at top
+            placesList.insert(WeatherModel(selectedPlace: selectedLocation, current: model), at: 0)
         }
+        // Save data using UserDefaults
+        saveData()
+    }
+    
+    public func removeSearchedPlace(index: Int) {
+        placesList.remove(at: index)
+        // Update saved data
+        saveData()
+    }
+    
+    private func saveData() {
+        storageService.saveData(placesList)
     }
 }

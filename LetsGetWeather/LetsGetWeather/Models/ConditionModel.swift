@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ConditionModel: Decodable {
+struct ConditionModel: Codable {
     let text: String?
     let icon: String?
 }

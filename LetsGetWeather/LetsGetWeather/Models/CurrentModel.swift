@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CurrentModel: Decodable {
+struct CurrentModel: Codable {
     let lastUpdated: String?
     let tempC: Double?
     let tempF: Double?

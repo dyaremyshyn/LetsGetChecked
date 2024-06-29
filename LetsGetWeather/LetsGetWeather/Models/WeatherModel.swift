@@ -8,7 +8,7 @@
 import Foundation
 import GooglePlaces
 
-struct WeatherModel {
-    let selectedPlace: GMSPlace?
+struct WeatherModel: Codable {
+    let selectedPlace: GooglePlace?
     let current: CurrentModel?
 }

@@ -11,8 +11,8 @@ public final class WeatherComposer {
     
     private init() {}
     
-    public static func weatherComposedWith(weatherLoader: WeatherDataLoader) -> WeatherViewController {
-        let viewModel = WeatherViewModel(weatherLoader: weatherLoader)
+    public static func weatherComposedWith(weatherLoader: WeatherDataLoader, storageService: StorageService) -> WeatherViewController {
+        let viewModel = WeatherViewModel(weatherLoader: weatherLoader, storageService: storageService)
         let viewController = WeatherViewController.makeWith(viewModel: viewModel)
         return viewController
     }
