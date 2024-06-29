@@ -92,7 +92,7 @@ public class WeatherViewController: UITableViewController {
     }
     
     @objc func search() {
-        viewModel?.fetchWeatherFor(location: viewModel?.selectedLocation)
+        viewModel?.fetchWeatherFor(location: searchController.searchBar.text)
     }
 }
 
@@ -109,10 +109,10 @@ extension WeatherViewController: GMSAutocompleteResultsViewControllerDelegate {
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
+        display(errorMessage: nil)
         searchController.isActive = false
         searchController.searchBar.text = place.formattedAddress
         viewModel?.selected(location: place)
-        display(errorMessage: nil)
     }
     
     public func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: any Error) {
@@ -138,7 +138,8 @@ extension WeatherViewController {
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedLocation = viewModel?.placesList[indexPath.row]
-        viewModel?.fetchWeatherFor(location: selectedLocation?.selectedPlace)
+        viewModel?.selected(location: selectedLocation?.selectedPlace)
+        viewModel?.fetchWeatherFor(location: selectedLocation?.selectedPlace?.formattedAddress ?? .none)
     }
     
     public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -150,6 +151,7 @@ extension WeatherViewController {
 extension WeatherViewController: WeatherErrorView {
     // Displaying error message in the header table view
     public func display(errorMessage: String?) {
+        searchController.isActive = false
         errorView.message = errorMessage
         tableView.reloadData()
     }

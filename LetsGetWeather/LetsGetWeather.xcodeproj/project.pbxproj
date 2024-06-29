@@ -28,6 +28,7 @@
 		8C1573FB2C2E2FDA00152A90 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573FA2C2E2FDA00152A90 /* UIViewController+ShowAlert.swift */; };
 		8C1573FD2C2F8C0F00152A90 /* UIAlertController+TextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573FC2C2F8C0F00152A90 /* UIAlertController+TextAlignment.swift */; };
 		8C1573FF2C2F980C00152A90 /* WeatherViewModel+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1573FE2C2F980C00152A90 /* WeatherViewModel+Strings.swift */; };
+		8C1574012C2FA85100152A90 /* ErrorWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1574002C2FA85100152A90 /* ErrorWeather.swift */; };
 		8CD802132C2B2BF100F2E383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802122C2B2BF100F2E383 /* AppDelegate.swift */; };
 		8CD802152C2B2BF100F2E383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */; };
 		8CD802172C2B2BF100F2E383 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802162C2B2BF100F2E383 /* WeatherViewController.swift */; };
@@ -82,6 +83,7 @@
 		8C1573FA2C2E2FDA00152A90 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 		8C1573FC2C2F8C0F00152A90 /* UIAlertController+TextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+TextAlignment.swift"; sourceTree = "<group>"; };
 		8C1573FE2C2F980C00152A90 /* WeatherViewModel+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherViewModel+Strings.swift"; sourceTree = "<group>"; };
+		8C1574002C2FA85100152A90 /* ErrorWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWeather.swift; sourceTree = "<group>"; };
 		8CD8020F2C2B2BF100F2E383 /* LetsGetWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGetWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD802122C2B2BF100F2E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				8C1573CC2C2B3A0900152A90 /* CurrentModel.swift */,
 				8C1573CE2C2B3B3400152A90 /* ConditionModel.swift */,
 				8C1573DA2C2B835D00152A90 /* WeatherModel.swift */,
+				8C1574002C2FA85100152A90 /* ErrorWeather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD802172C2B2BF100F2E383 /* WeatherViewController.swift in Sources */,
+				8C1574012C2FA85100152A90 /* ErrorWeather.swift in Sources */,
 				8C1573D92C2B6A1400152A90 /* Constants.swift in Sources */,
 				8C1573EE2C2DC59B00152A90 /* UITableView+HeaderSizing.swift in Sources */,
 				8C1573CD2C2B3A0900152A90 /* CurrentModel.swift in Sources */,

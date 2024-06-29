@@ -26,14 +26,12 @@ class WeatherViewModel: ObservableObject {
         selectedLocation = location
     }
     
-    public func fetchWeatherFor(location: GMSPlace?) {
-        selected(location: location)
+    public func fetchWeatherFor(location: String?) {
+        guard let location = location else { return }
         
-        guard let location = location?.formattedAddress else { return }
         let url = URL(string: "\(Constants.weatherBaseUrl)?key=\(Constants.weatherAPIKey)&q=\(location)")!
         
         weatherLoader.loadData(from: url)
-            .map(\.current)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 guard let self else { return }
@@ -42,9 +40,12 @@ class WeatherViewModel: ObservableObject {
                     self.errorMessage = self.servicerErrorMessage
                 case .finished: ()
                 }
-            } receiveValue: { [weak self] current in
-                guard let self else { return }
-                appendReatrivedWeatherFor(current)
+            } receiveValue: { [weak self] weatherResponse in
+                guard let self, weatherResponse.error == nil else {
+                    self?.errorMessage = weatherResponse.error?.message
+                    return
+                }
+                appendReatrivedWeatherFor(weatherResponse.current)
                 self.errorMessage = nil
             }
             .store(in: &cancellables)

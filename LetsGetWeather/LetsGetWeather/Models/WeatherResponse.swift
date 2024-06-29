@@ -10,6 +10,5 @@ import Foundation
 public struct WeatherResponse: Decodable {
     let location: LocationModel?
     let current: CurrentModel?
-    let code: Int?
-    let message: String?
+    let error: ErrorWeather?
 }
