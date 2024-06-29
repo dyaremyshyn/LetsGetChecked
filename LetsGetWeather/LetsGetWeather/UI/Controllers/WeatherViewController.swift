@@ -142,7 +142,7 @@ extension WeatherViewController {
     }
     
     public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        viewModel?.tableHeaderTitle
+        viewModel?.placesList.count ?? 0 > 0 ? viewModel?.tableHeaderTitle : ""
     }
 }
 
