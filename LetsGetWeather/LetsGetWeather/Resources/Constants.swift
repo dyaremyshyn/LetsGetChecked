@@ -31,3 +31,19 @@ enum Constants {
         static var googleAPIKey: String { storage["googleAPIKey"] ?? "" }
     }
 }
+
+struct SetupApp {
+    static func setupAPIKeys(completion: @escaping () -> Void) {
+        DispatchQueue.main.async {
+            Task {
+                do {
+                    try await Constants.loadAPIKeys()
+                    completion()
+                } catch {
+                    print("Failed to load API keys: \(error)")
+                    completion()
+                }
+            }
+        }
+    }
+}

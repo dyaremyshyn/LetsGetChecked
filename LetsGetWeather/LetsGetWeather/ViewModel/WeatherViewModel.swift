@@ -34,10 +34,10 @@ class WeatherViewModel: ObservableObject {
     }
     
     public func fetchWeatherFor(location: String?) {
-        guard let location = location else { return }
-        
-        let url = URL(string:"\(WeatherAPIHelper.baseUrl)?key=\(Constants.APIKeys.weatherAPIKey)&q=\(location)&lang=\(LanguageCodes.getLanguage())")!
-        
+        guard let url = URL(
+            string:"\(WeatherAPIHelper.baseUrl)?key=\(Constants.APIKeys.weatherAPIKey)&q=\(location ?? "")&lang=\(LanguageCodes.getLanguage())"
+        ) else { return }
+                
         weatherLoader.loadData(from: url)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
