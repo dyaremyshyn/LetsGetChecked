@@ -15,9 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GMSPlacesClient.provideAPIKey(Constants.googleAPIKey)
-        
+        setupAPIKeys {
+            // This block will execute after API keys are loaded
+            GMSPlacesClient.provideAPIKey(Constants.APIKeys.googleAPIKey)
+        }
+                
         return true
+    }
+    
+    private func setupAPIKeys(completion: @escaping () -> Void) {
+        Task {
+            do {
+                try await Constants.loadAPIKeys()
+                completion()
+            } catch {
+                print("Failed to load API keys: \(error)")
+                completion()
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle

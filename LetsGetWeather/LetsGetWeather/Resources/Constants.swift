@@ -4,19 +4,30 @@
 //
 //  Created by Dmytro Yaremyshyn on 25/06/2024.
 //
+// Credits to Toomas Vahter and his article 
+// https://augmentedcode.io/2023/11/27/using-on-demand-resources-for-securely-storing-api-keys-in-ios-apps/
+// Storing API keys securely in Swift is essential to protect the application, users, and data.
 
 import Foundation
 
-struct Constants {
-    static var weatherBaseUrl: String {
-        "https://api.weatherapi.com/v1/current.json"
-    }
+enum Constants {
     
-    static var weatherAPIKey: String {
-        "55a73dadc11041ea8b0164002242506"
+    static func loadAPIKeys() async throws {
+        let request = NSBundleResourceRequest(tags: ["APIKeys"])
+        try await request.beginAccessingResources()
+
+        let url = Bundle.main.url(forResource: "APIKeys", withExtension: "json")!
+        let data = try Data(contentsOf: url)
+
+        APIKeys.storage = try JSONDecoder().decode([String: String].self, from: data)
+
+        request.endAccessingResources()
     }
-    
-    static var googleAPIKey: String {
-        "AIzaSyArSB3i9WX6wqZKKrbpLOcmjKh8ACnXUH0"
-    }
+
+    public enum APIKeys {
+        static fileprivate(set) var storage = [String: String]()
+
+        static var weatherAPIKey: String { storage["weatherAPIKey"] ?? "" }
+        static var googleAPIKey: String { storage["googleAPIKey"] ?? "" }
+    }    
 }
