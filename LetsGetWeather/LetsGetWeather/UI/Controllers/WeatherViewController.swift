@@ -140,6 +140,10 @@ extension WeatherViewController {
         let selectedLocation = viewModel?.placesList[indexPath.row]
         viewModel?.fetchWeatherFor(location: selectedLocation?.selectedPlace)
     }
+    
+    public override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        viewModel?.tableHeaderTitle
+    }
 }
 
 //MARK: Display Weather Error protocol 

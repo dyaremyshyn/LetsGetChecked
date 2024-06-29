@@ -130,4 +130,13 @@ extension WeatherViewModel {
             comment: "Temperature"
         )
     }
+    
+    public var tableHeaderTitle: String {
+        NSLocalizedString(
+            "WEATHER_TABLE_HEADER_TITLE",
+            tableName: "Weather",
+            bundle: .main,
+            comment: "Temperature"
+        )
+    }
 }

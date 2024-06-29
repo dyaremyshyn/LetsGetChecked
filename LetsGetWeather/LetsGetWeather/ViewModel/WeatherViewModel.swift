@@ -22,7 +22,6 @@ class WeatherViewModel: ObservableObject {
         self.weatherLoader = weatherLoader
     }
     
-    
     public func selected(location: GMSPlace?) {
         selectedLocation = location
     }
