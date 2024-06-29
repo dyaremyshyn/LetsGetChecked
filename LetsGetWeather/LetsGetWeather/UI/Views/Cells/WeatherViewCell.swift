@@ -13,7 +13,7 @@ class WeatherViewCell: UITableViewCell {
     static let identifier = String(describing: WeatherViewCell.self)
     
     lazy var backgroundImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "weatherBackground"))
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 10
@@ -132,5 +132,7 @@ class WeatherViewCell: UITableViewCell {
         conditionLabel.text = model?.current?.condition?.text ?? ""
         humidityLabel.text = "H: \(model?.current?.humidity?.description ?? "")"
         windLabel.text = "W:\(model?.current?.windKph?.description ?? "")Kph"
+        
+        backgroundImageView.image = WeatherConditionsHelper.getBackgroundImageFor(model: model?.current)
     }
 }
