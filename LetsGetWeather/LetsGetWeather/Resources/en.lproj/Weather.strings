@@ -10,4 +10,4 @@
 "WEATHER_ALERT_WIND_KM" = "Wind:";
 "WEATHER_ALERT_WIND_DIRECTION" = "Wind Direction:";
 "WEATHER_ALERT_CLOUD" = "Cloud:";
-"WEATHER_TABLE_HEADER_TITLE" = "Recently Searched";
+"WEATHER_TABLE_HEADER_TITLE" = "Recently searched locations";
