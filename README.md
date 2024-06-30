@@ -68,6 +68,16 @@ This is the minimum required. Have fun and feel free to impress.
 **MAKE IT WORK, MAKE IT PERFECT**<br>
 I followed <ins>**clean architecture**</ins> principles by focusing on separation of concerns, dependency inversion, and keeping core logic independent of external frameworks. This methodology ensures that each layer functions independently, making the project robust, maintainable, flexible, and scalable. Additionally, this approach simplifies the testing of implemented features and facilitates the integration of new ones.
 
+## Tests
+F.I.R.S.T Principles of testing:<br>
+- Fast
+- Isolated/Independent
+- Repeatable
+- Self-validating
+- Thorough
+
+By following the F.I.R.S.T Principles we can establish a robust testing framework that improves code quality, speeds up development, and ensures a smooth, reliable user experience. Additionally, this approach helps prevent bugs from emerging during change requests.
+
 
 ### Thanks for reviewing my challenge, I am open to any suggestion and always open to improve! :)
 
