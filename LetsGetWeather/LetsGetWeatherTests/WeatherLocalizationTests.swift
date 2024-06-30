@@ -29,7 +29,7 @@ final class WeatherLocalizationTests: XCTestCase {
                 comment: ""
             )
             // Check that the string is not equal to the key itself
-            XCTAssertNotEqual(localizedString, key, "Missing (Base) localized string for key: '\(key)' in table: '\(tableName)'")
+            XCTAssertNotEqual(localizedString, key, "Missing localized string for key: '\(key)' in table: '\(tableName)'")
         }
     }
 }
