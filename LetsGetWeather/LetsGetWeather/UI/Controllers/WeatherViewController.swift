@@ -65,9 +65,7 @@ public class WeatherViewController: UITableViewController {
         
         viewModel?.$errorMessage
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] message in
-                self?.display(errorMessage: message)
-            }
+            .sink { [weak self] message in self?.display(errorMessage: message) }
             .store(in: &cancellables)
     }
     
