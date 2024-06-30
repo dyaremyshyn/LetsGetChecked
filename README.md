@@ -40,26 +40,26 @@ does and why you choose it.
 This is the minimum required. Have fun and feel free to impress.
 
 ## Implemented Key Features
-[X] Search field to enter a location<br>
-[X] Search button to call the API<br>
-[X] Weather API Integration<br>
-[X] Weather API with localization<br>
-[X] Google Place API Integration for autocomplete<br>
-[X] Added APIKeys.json to Resource Tags 
-[X] Display action sheet with weather data<br>
-[X] Store query key word in a table <br>
-[X] Use UserDefaults to store weather locations 
-[X] Tap on the searched weather locations to get data from API <br>
-[X] Swipe left to delete row from table<br>
-[X] Universal app<br>
-[X] Swift and UIKit with auto layout<br>
-[X] Unit tests<br>
-[X] Localized strings (English and Portuguese)<br>
-[X] Networking layer using Combine Framework<br>
-[X] Displaying Error in case some Weather API or Google Place API error<br>
-[X] Support iOS 15 minimum<br>
-[X] Documentation<br>
-
+- [X] Search field to enter a location<br>
+- [X] Search button to call the API<br>
+- [X] Weather API Integration<br>
+- [X] Weather API with localization<br>
+- [X] Google Place API Integration for autocomplete<br>
+- [X] Added APIKeys.json to Resource Tags 
+- [X] Display action sheet with weather data<br>
+- [X] Store query key word in a table <br>
+- [X] Use UserDefaults to store weather locations 
+- [X] Tap on the searched weather locations to get data from API <br>
+- [X] Swipe left to delete row from table<br>
+- [X] Universal app<br>
+- [X] Swift and UIKit with auto layout<br>
+- [X] Unit tests<br>
+- [X] Localized strings (English and Portuguese)<br>
+- [X] Networking layer using Combine Framework<br>
+- [X] Displaying Error in case some Weather API or Google Place API error<br>
+- [X] Support iOS 15 minimum<br>
+- [X] Documentation<br>
+ 
 ## Important observations
 -> API Keys cannot be stored in the code or even in the info.plist. This could lead to a leak, and the API Keys will be exposed. To prevent, and mange properly the API Keys we should use some service to store the API Keys outside the app, and should be donwloaded as some kind of resource after the app is installed.<br>
 -> Implemented the Google Place API to have the autocomplete in the location input.<br>
