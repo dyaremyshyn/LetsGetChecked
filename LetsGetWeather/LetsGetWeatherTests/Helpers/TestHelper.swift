@@ -21,34 +21,51 @@ struct TestHelper {
     static var anySuccessWeatherResponse: WeatherResponse {
         WeatherResponse(
             location: LocationModel(name: "", region: nil, country: nil, lat: nil, lon: nil, localtime: nil),
-            current: CurrentModel(
-                lastUpdated: nil,
-                tempC: 20.0,
-                tempF: 60.0,
-                isDay: 1,
-                condition: ConditionModel(text: "Sunny", icon: nil),
-                windMph: 10.1,
-                windKph: 10.1,
-                windDegree: nil,
-                windDir: "S",
-                pressureMb: nil,
-                pressureIn: nil,
-                precipMm: nil,
-                precipIn: nil,
-                humidity: 5,
-                cloud: 50,
-                feelslikeC: nil,
-                feelslikeF: nil,
-                visKm: nil,
-                visMiles: nil,
-                uv: 2.2,
-                gustMph: nil,
-                gustKph: nil
-            ),
+            current: currentModel,
             error: nil)
     }
     
     static var anyErrorWeatherResponse: WeatherResponse {
         WeatherResponse(location: nil, current: nil, error: ErrorWeather(code: 10, message: "Missing location parameter"))
+    }
+    
+    static var weatherSavedList: [WeatherModel] {
+        [ 
+            WeatherModel(
+                selectedPlace: GooglePlace(name: "Coimbra", formattedAddress: "Coimbra, Portugal", placeID: "3130"),
+                current: currentModel
+            ),
+            WeatherModel(
+                selectedPlace: GooglePlace(name: "Paris, France", formattedAddress: "Paris, France", placeID: "1240"),
+                current: currentModel
+            )
+        ]
+    }
+    
+    private static var currentModel: CurrentModel {
+        CurrentModel(
+            lastUpdated: nil,
+            tempC: 20.0,
+            tempF: 60.0,
+            isDay: 1,
+            condition: ConditionModel(text: "Sunny", icon: nil),
+            windMph: 10.1,
+            windKph: 10.1,
+            windDegree: nil,
+            windDir: "S",
+            pressureMb: nil,
+            pressureIn: nil,
+            precipMm: nil,
+            precipIn: nil,
+            humidity: 5,
+            cloud: 50,
+            feelslikeC: nil,
+            feelslikeF: nil,
+            visKm: nil,
+            visMiles: nil,
+            uv: 2.2,
+            gustMph: nil,
+            gustKph: nil
+        )
     }
 }

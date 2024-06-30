@@ -1,6 +1,6 @@
 //
-//  LetsGetWeatherTests.swift
-//  LetsGetWeatherTests
+//  WeatherServiceTests.swift
+//  WeatherServiceTests
 //
 //  Created by Dmytro Yaremyshyn on 25/06/2024.
 //
@@ -9,7 +9,7 @@ import XCTest
 import Combine
 @testable import LetsGetWeather
 
-final class LetsGetWeatherTests: XCTestCase {
+final class WeatherServiceTests: XCTestCase {
     var cancellables: Set<AnyCancellable>!
     
     override func setUp() {
@@ -89,7 +89,7 @@ final class LetsGetWeatherTests: XCTestCase {
     // MARK: - Helpers
 
     private func makeSUT(shouldReturnError: Bool, shouldReturnAPIMessage: Bool, file: StaticString = #filePath, line: UInt = #line) -> WeatherDataLoader {
-        let sut = MockWeatherAPICall(shouldReturnError: shouldReturnError, shouldReturnAPIMessage: shouldReturnAPIMessage)
+        let sut = MockWeatherService(shouldReturnError: shouldReturnError, shouldReturnAPIMessage: shouldReturnAPIMessage)
         trackForMemoryLeaks(sut)
         return sut
     }

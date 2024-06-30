@@ -37,15 +37,17 @@
 		8C1574112C30B66300152A90 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1574102C30B66300152A90 /* StorageService.swift */; };
 		8C1574142C30B6AC00152A90 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1574132C30B6AC00152A90 /* DataHandler.swift */; };
 		8C4E45ED2C31D37C005781E8 /* WeatherLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45EC2C31D37C005781E8 /* WeatherLocalizationTests.swift */; };
-		8C4E45F42C31DE32005781E8 /* MockWeatherAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45F32C31DE32005781E8 /* MockWeatherAPICall.swift */; };
+		8C4E45F42C31DE32005781E8 /* MockWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45F32C31DE32005781E8 /* MockWeatherService.swift */; };
 		8C4E45F62C31DEA3005781E8 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45F52C31DEA3005781E8 /* TestHelper.swift */; };
 		8C4E45F82C31E178005781E8 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45F72C31E178005781E8 /* XCTestCase+MemoryLeakTracking.swift */; };
+		8C4E45FC2C31E548005781E8 /* StorageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45FB2C31E548005781E8 /* StorageServiceTests.swift */; };
+		8C4E45FE2C31E567005781E8 /* MockStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E45FD2C31E567005781E8 /* MockStorageService.swift */; };
 		8CD802132C2B2BF100F2E383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802122C2B2BF100F2E383 /* AppDelegate.swift */; };
 		8CD802152C2B2BF100F2E383 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */; };
 		8CD802172C2B2BF100F2E383 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802162C2B2BF100F2E383 /* WeatherViewController.swift */; };
 		8CD8021C2C2B2BF200F2E383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8021B2C2B2BF200F2E383 /* Assets.xcassets */; };
 		8CD8021F2C2B2BF200F2E383 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8CD8021E2C2B2BF200F2E383 /* Base */; };
-		8CD8022A2C2B2BF200F2E383 /* LetsGetWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802292C2B2BF200F2E383 /* LetsGetWeatherTests.swift */; };
+		8CD8022A2C2B2BF200F2E383 /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802292C2B2BF200F2E383 /* WeatherServiceTests.swift */; };
 		8CD802342C2B2BF200F2E383 /* LetsGetWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802332C2B2BF200F2E383 /* LetsGetWeatherUITests.swift */; };
 		8CD802362C2B2BF200F2E383 /* LetsGetWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD802352C2B2BF200F2E383 /* LetsGetWeatherUITestsLaunchTests.swift */; };
 		FF557E01773AECEF8ED639F0 /* Pods_LetsGetWeatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094087A65E31C77DFC49CFB6 /* Pods_LetsGetWeatherTests.framework */; };
@@ -103,9 +105,11 @@
 		8C1574102C30B66300152A90 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		8C1574132C30B6AC00152A90 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		8C4E45EC2C31D37C005781E8 /* WeatherLocalizationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherLocalizationTests.swift; sourceTree = "<group>"; };
-		8C4E45F32C31DE32005781E8 /* MockWeatherAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherAPICall.swift; sourceTree = "<group>"; };
+		8C4E45F32C31DE32005781E8 /* MockWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherService.swift; sourceTree = "<group>"; };
 		8C4E45F52C31DEA3005781E8 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		8C4E45F72C31E178005781E8 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		8C4E45FB2C31E548005781E8 /* StorageServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceTests.swift; sourceTree = "<group>"; };
+		8C4E45FD2C31E567005781E8 /* MockStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorageService.swift; sourceTree = "<group>"; };
 		8CD8020F2C2B2BF100F2E383 /* LetsGetWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGetWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD802122C2B2BF100F2E383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CD802142C2B2BF100F2E383 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 		8CD8021E2C2B2BF200F2E383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CD802202C2B2BF200F2E383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CD802252C2B2BF200F2E383 /* LetsGetWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGetWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CD802292C2B2BF200F2E383 /* LetsGetWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGetWeatherTests.swift; sourceTree = "<group>"; };
+		8CD802292C2B2BF200F2E383 /* WeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 		8CD8022F2C2B2BF200F2E383 /* LetsGetWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGetWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD802332C2B2BF200F2E383 /* LetsGetWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGetWeatherUITests.swift; sourceTree = "<group>"; };
 		8CD802352C2B2BF200F2E383 /* LetsGetWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGetWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -344,7 +348,8 @@
 		8C4E45F22C31DE1D005781E8 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				8C4E45F32C31DE32005781E8 /* MockWeatherAPICall.swift */,
+				8C4E45F32C31DE32005781E8 /* MockWeatherService.swift */,
+				8C4E45FD2C31E567005781E8 /* MockStorageService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -392,7 +397,8 @@
 				8C4E45F22C31DE1D005781E8 /* Mocks */,
 				8C4E45F12C31DE0F005781E8 /* Helpers */,
 				8C4E45EC2C31D37C005781E8 /* WeatherLocalizationTests.swift */,
-				8CD802292C2B2BF200F2E383 /* LetsGetWeatherTests.swift */,
+				8CD802292C2B2BF200F2E383 /* WeatherServiceTests.swift */,
+				8C4E45FB2C31E548005781E8 /* StorageServiceTests.swift */,
 			);
 			path = LetsGetWeatherTests;
 			sourceTree = "<group>";
@@ -698,8 +704,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD8022A2C2B2BF200F2E383 /* LetsGetWeatherTests.swift in Sources */,
-				8C4E45F42C31DE32005781E8 /* MockWeatherAPICall.swift in Sources */,
+				8CD8022A2C2B2BF200F2E383 /* WeatherServiceTests.swift in Sources */,
+				8C4E45FC2C31E548005781E8 /* StorageServiceTests.swift in Sources */,
+				8C4E45F42C31DE32005781E8 /* MockWeatherService.swift in Sources */,
+				8C4E45FE2C31E567005781E8 /* MockStorageService.swift in Sources */,
 				8C4E45ED2C31D37C005781E8 /* WeatherLocalizationTests.swift in Sources */,
 				8C4E45F62C31DEA3005781E8 /* TestHelper.swift in Sources */,
 				8C4E45F82C31E178005781E8 /* XCTestCase+MemoryLeakTracking.swift in Sources */,

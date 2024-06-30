@@ -1,5 +1,5 @@
 //
-//  MockWeatherAPICall.swift
+//  MockWeatherService.swift
 //  LetsGetWeatherTests
 //
 //  Created by Dmytro Yaremyshyn on 30/06/2024.
@@ -9,9 +9,9 @@ import Foundation
 import Combine
 @testable import LetsGetWeather
 
-class MockWeatherAPICall: WeatherDataLoader {
-    var shouldReturnError: Bool
-    var shouldReturnAPIMessage: Bool
+class MockWeatherService: WeatherDataLoader {
+    let shouldReturnError: Bool
+    let shouldReturnAPIMessage: Bool
 
     init(shouldReturnError: Bool, shouldReturnAPIMessage: Bool) {
         self.shouldReturnError = shouldReturnError
