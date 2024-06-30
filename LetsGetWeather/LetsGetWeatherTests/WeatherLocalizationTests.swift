@@ -9,7 +9,7 @@ import XCTest
 
 final class WeatherLocalizationTests: XCTestCase {
 
-    func test_someLocalizedStrings() {
+    func testSomeLocalizedStrings() {
         // List of keys to test
         let keys = [
             "WEATHER_ALERT_TITLE",
