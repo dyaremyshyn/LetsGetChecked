@@ -3,7 +3,7 @@
 
 ### Create an app that does the following:
 The app should make an api request using the following weather api.
-Details can be found here: https://www.weatherapi.com/
+Details can be found here: https://www.weatherapi.com/<br>
 There are links on the home page for “Sign Up” & “View Docs”.
 You will need to sign up for a free account to retrieve an api key - once retrieved you can use the api key to make various weather related requests.
 An example of some of the request endpoints:<br>
@@ -61,11 +61,13 @@ This is the minimum required. Have fun and feel free to impress.
 - [X] Documentation<br>
  
 ## Important observations
--> API Keys cannot be stored in the code or even in the info.plist. This could lead to a leak, and the API Keys will be exposed. To prevent, and mange properly the API Keys we should use some service to store the API Keys outside the app, and should be donwloaded as some kind of resource after the app is installed.<br>
--> Implemented the Google Place API to have the autocomplete in the location input.<br>
+- API Keys cannot be stored in the code or even in the info.plist. This could lead to a leak, and the API Keys will be exposed. To prevent and manage properly the API Keys, we should use some service to store the API Keys outside the app (p.e. AWS Secrets Manager) and should be downloaded as some kind of resource after the app is installed.<br>
+- Implemented the Google Place API to have the autocomplete in the location input. It will help the user to prevent any typo and search faster.<br>
 
-## Clean Architecture
-My approach is following the separations of concerns, dependency inversion, and keeping the core logic independent of external frameworks. Each layer should not depend on any other layer. This way the project is robust, maintainable, flexible, and scalable codebase. Also, this way the implemented features are easier to test and it's easier to implement new features. 
+## Architecture
+**MAKE IT WORK, MAKE IT PERFECT**<br>
+I followed <ins>**clean architecture**</ins> principles by focusing on separation of concerns, dependency inversion, and keeping core logic independent of external frameworks. This methodology ensures that each layer functions independently, making the project robust, maintainable, flexible, and scalable. Additionally, this approach simplifies the testing of implemented features and facilitates the integration of new ones.
+
 
 ### Thanks for reviewing my challenge, I am open to any suggestion and always open to improve! :)
 
