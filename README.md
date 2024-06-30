@@ -6,10 +6,10 @@ The app should make an api request using the following weather api.
 Details can be found here: https://www.weatherapi.com/
 There are links on the home page for “Sign Up” & “View Docs”.
 You will need to sign up for a free account to retrieve an api key - once retrieved you can use the api key to make various weather related requests.
-An example of some of the request endpoints:
-  • https://api.weatherapi.com/v1/current.json?Key={api-key}&q=Dublin
-    Http Get request which returns current weather related data in Json format for a specified query location.
-  • https://api.weatherapi.com/v1/forecast.json?Key={api-key}&q=Dublin&dt={yyyy-MM-dd} Http Get request which returns weather forecast data in Json format for a specified query location and for a specified date.
+An example of some of the request endpoints:<br>
+  • https://api.weatherapi.com/v1/current.json?Key={api-key}&q=Dublin <br>
+    Http Get request which returns current weather related data in Json format for a specified query location.<br>
+  • https://api.weatherapi.com/v1/forecast.json?Key={api-key}&q=Dublin&dt={yyyy-MM-dd} <br>Http Get request which returns weather forecast data in Json format for a specified query location and for a specified date.
   
 The weatherapi service provides various other api endpoints and various other request parameters. The Swagger link below can be used to investigate the various available weather api. https://app.swaggerhub.com/apis-docs/WeatherAPI.com/WeatherAPI/1.0.2#/
 
