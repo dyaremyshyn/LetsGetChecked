@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct StorageService: DataHandler {
+public struct StorageService: StorageHandler {
     typealias DataType = [WeatherModel]
     
     static let dataKey = "weatherLocations"

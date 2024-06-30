@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DataHandler {
+protocol StorageHandler {
     associatedtype DataType
 
     func saveData(_ data: DataType)

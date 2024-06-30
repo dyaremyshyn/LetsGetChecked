@@ -8,7 +8,7 @@
 import Foundation
 @testable import LetsGetWeather
 
-class MockStorageService: DataHandler {
+class MockStorageService: StorageHandler {
     typealias DataType = [WeatherModel]
     static let mockKey = "mockKey"
     
