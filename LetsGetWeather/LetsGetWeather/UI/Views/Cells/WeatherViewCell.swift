@@ -26,7 +26,7 @@ class WeatherViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .boldSystemFont(ofSize: 18)
         label.textColor = .white
-        label.numberOfLines = 0
+        label.numberOfLines = 1
         return label
     }()
     
@@ -35,7 +35,7 @@ class WeatherViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         label.textColor = .white
-        label.numberOfLines = 0
+        label.numberOfLines = 2
         return label
     }()
     
